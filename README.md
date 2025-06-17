@@ -73,27 +73,50 @@ When you want to forcefully reload, for example to reset the state of your app, 
 - **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
 - **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+# Tech overview
 
-### Now what?
+### Project summary
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+A React Native application with authentication, API integration, and offline data persistence. Users can log in, view a list of posts fetched from an external API, and access detailed post information with offline support.
 
-# Troubleshooting
+### Tech Stack
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Framework: React Native + TypeScript
+State Management: Zustand with AsyncStorage persistence
+Navigation: React Navigation (Stack Navigator)
+API Integration: Fetch API with timeout handling
+Styling: StyleSheet with centralized color system
+Code Quality: ESLint + Prettier
+Package Manager: Yarn
 
-# Learn More
 
-To learn more about React Native, take a look at the following resources:
+### Project Structure
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-# Scramblytask
+src/
+├── components/     # Reusable UI components (e.g., CustomButton)
+├── navigation/     # App, Auth, and Home stack navigators
+├── screens/        # Login, Home, List, and Details screens
+├── services/       # API integration (e.g., fetchPosts)
+├── store/          # Zustand stores for auth and posts
+└── utils/          # Helpers (e.g., validation, colors)
 
+# Architecture decisions
+
+### React Native
+Cross-platform development reduces time and cost.
+
+### Zustand
+Lightweight state management with persistence support.
+
+### React Navigation
+A much more supported & maintainable navigation by the community.
+
+### StyleSheet
+Consistent design , and better support with React Native.
+
+### Path Aliases
+Simplifies imports and improves maintainability.
+
+### ESLint & Prettier
+Enforces coding standards and improves readability.
