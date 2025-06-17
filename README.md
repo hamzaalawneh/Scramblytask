@@ -82,24 +82,17 @@ A React Native application with authentication, API integration, and offline dat
 
 ### Tech Stack
 
-Framework: React Native + TypeScript
-State Management: Zustand with AsyncStorage persistence
-Navigation: React Navigation (Stack Navigator)
-API Integration: Fetch API with timeout handling
-Styling: StyleSheet with centralized color system
-Code Quality: ESLint + Prettier
-Package Manager: Yarn
-
+- **Framework:** React Native + TypeScript  
+- **State Management:** Zustand with AsyncStorage persistence  
+- **Navigation:** React Navigation (Stack Navigator)  
+- **API Integration:** Fetch API with timeout handling  
+- **Styling:** StyleSheet with centralized color system  
+- **Code Quality:** ESLint + Prettier  
+- **Package Manager:** Yarn  
 
 ### Project Structure
 
-src/
-├── components/     # Reusable UI components (e.g., CustomButton)
-├── navigation/     # App, Auth, and Home stack navigators
-├── screens/        # Login, Home, List, and Details screens
-├── services/       # API integration (e.g., fetchPosts)
-├── store/          # Zustand stores for auth and posts
-└── utils/          # Helpers (e.g., validation, colors)
+<pre> ``` src/ ├── components/ # Reusable UI components (e.g., CustomButton) ├── navigation/ # App, Auth, and Home stack navigators ├── screens/ # Login, Home, List, and Details screens ├── services/ # API integration (e.g., fetchPosts) ├── store/ # Zustand stores for auth and posts └── utils/ # Helpers (e.g., validation, colors) ``` </pre>
 
 # Architecture decisions
 
