@@ -92,7 +92,8 @@ A React Native application with authentication, API integration, and offline dat
 
 ### Project Structure
 
-<pre> ``` src/ ├── components/ # Reusable UI components (e.g., CustomButton) ├── navigation/ # App, Auth, and Home stack navigators ├── screens/ # Login, Home, List, and Details screens ├── services/ # API integration (e.g., fetchPosts) ├── store/ # Zustand stores for auth and posts └── utils/ # Helpers (e.g., validation, colors) ``` </pre>
+<pre lang="md"> ```text src/ ├── components/ # Reusable UI components (e.g., CustomButton) ├── navigation/ # App, Auth, and Home stack navigators ├── screens/ # Login, Home, List, and Details screens ├── services/ # API integration (e.g., fetchPosts) ├── store/ # Zustand stores for auth and posts └── utils/ # Helpers (e.g., validation, colors) ``` </pre>
+
 
 # Architecture decisions
 
